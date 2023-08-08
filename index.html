@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Library-->  
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <span> Game Over</span>
+        <div class="play-again">
+            Play Again?
+            <div class="choosen">
+                <span class="active yes">Yes</span>
+                <span class="no">No</span>
+            </div>
+        </div>
+    </div>
+    <div class="victory">
+        <span>Victory</span>
+        <div class="play-again">
+            Play Again?
+            <div class="choosen">
+                <span class="active yes">Yes</span>
+                <span class="no">No</span>
+            </div>
+        </div>
+    </div>
+    <div class="control-buttons">
+        <span id="startGame">Start Game</span>
+    </div>
+    <div class="info-container">
+        <div class="name">
+            Hello: <span id="username"></span>
+        </div>
+        <div><span class="time">120</span> Seconds</div>
+        <div class="tries">
+            Wrong Tries: <span>0</span>
+        </div>
+    </div>
+    <div class="memory-game-blocks">
+        <div class="game-block" data-icon="angular">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-angular"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="angular">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-angular"></i>
+            </div>
+        </div>
+
+        <div class="game-block"  data-icon="css3">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="css3">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+        </div> 
+       <div class="game-block" data-icon="github">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="github">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+
+        <div class="game-block"  data-icon="gulpjs">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-gulp"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="gulpjs">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-gulp"></i>
+            </div>
+        </div>
+
+        <div class="game-block" data-icon="html5">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="html5">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+        </div>
+    
+        <div class="game-block" data-icon="java">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-java"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="java">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-java"></i>
+            </div>
+        </div>
+
+        <div class="game-block" data-icon="js">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-js"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="js">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-js"></i>
+            </div>
+        </div>
+
+        <div class="game-block" data-icon="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-python"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="python">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-python"></i>
+            </div>
+        </div>
+
+        <div class="game-block" data-icon="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-react"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="react">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-react"></i>
+            </div>
+        </div>
+
+        <div class="game-block" data-icon="vuejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-vuejs"></i>
+            </div>
+        </div>
+        <div class="game-block" data-icon="vuejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <i class="fa-brands fa-vuejs"></i>
+            </div>
+        </div>
+    </div>
+    <audio id="success" src="success.wav" preload="auto"></audio>
+    <audio id="fail" src="fail.wav" preload="auto"></audio>
+    <audio id="game-over" src="game-over.wav" preload="auto"></audio>
+    <audio id="win-game" src="win-game.wav" preload="auto"></audio>
+    <script src="js/main.js"></script>
+</body>
+</html>
